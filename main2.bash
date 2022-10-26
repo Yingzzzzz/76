@@ -1,11 +1,11 @@
 mkdir web_monitor_log
 cd web_monitor_log
 touch Web_log.csv  #Final output
+touch WebLog.csv
 
-wget https://raw.githubusercontent.com/Yingzzzzz/jhg/main/main.bash
-chmod +x main.bash
-./main.bash
-
+wget https://raw.githubusercontent.com/Yingzzzzz/76/main/directory.bash
+chmod +x directory.bash
+./directory.bash
 #duplicate
 awk -F '|' '!x[$1]++' WebLog.csv > Web_Log.csv
 #output
